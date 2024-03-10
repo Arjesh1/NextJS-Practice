@@ -1,5 +1,10 @@
+import { Header } from "@/components/header";
+
 export default function Services() {
     return (
-      <h1>Services page!</h1>
+      <div>
+        <h1>Services page!</h1>
+      </div>
+      
     );
   }
