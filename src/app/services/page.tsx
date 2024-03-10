@@ -1,5 +1,5 @@
 export default function Services() {
     return (
-      <h1>Hello, Next.js from services!</h1>
+      <h1>Services page!</h1>
     );
   }
