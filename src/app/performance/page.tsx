@@ -1,5 +1,3 @@
 export default function Performance() {
-    return (
-      <h1> Performance page!</h1>
-    );
-  }
+  return <h1> Performance page!</h1>;
+}
