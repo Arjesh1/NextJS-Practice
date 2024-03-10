@@ -3,14 +3,14 @@ import Link from "next/link";
 export const Header = () => {
   return (
     <>
-      <header className="bg-blue-100">
+      <header className="absolute w-full z-50">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
-              <span className="text-xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+              <span className="text-xl font-bold tracking-tight text-white sm:text-3xl">
                 LOGO
               </span>
             </Link>
@@ -18,7 +18,7 @@ export const Header = () => {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
             >
               <span className="sr-only">Open main menu</span>
               <svg
@@ -40,25 +40,25 @@ export const Header = () => {
           <div className="hidden lg:flex lg:gap-x-12">
             <Link
               href="/"
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="text-sm font-semibold leading-6 text-white"
             >
               Home
             </Link>
             <Link
               href="/performance"
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="text-sm font-semibold leading-6 text-white"
             >
               Performance
             </Link>
             <Link
               href="/scale"
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="text-sm font-semibold leading-6 text-white"
             >
               Scale
             </Link>
             <Link
               href="/reliability"
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="text-sm font-semibold leading-6 text-white"
             >
               Reliability
             </Link>
@@ -66,7 +66,7 @@ export const Header = () => {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
               href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="text-sm font-semibold leading-6 text-white"
             >
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
@@ -78,13 +78,13 @@ export const Header = () => {
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5">
-                <span className="text-xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+                <span className="text-xl font-bold tracking-tight text-grey-900 sm:text-3xl">
                   LOGO
                 </span>
               </Link>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className="-m-2.5 rounded-md p-2.5 text-grey-900"
               >
                 <span className="sr-only">Close menu</span>
                 <svg
@@ -108,25 +108,25 @@ export const Header = () => {
                 <div className="space-y-2 py-6">
                   <Link
                     href="/"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-grey-900 hover:bg-gray-50"
                   >
                     Home
                   </Link>
                   <Link
                     href="/performance"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-grey-900 hover:bg-gray-50"
                   >
                     Performance
                   </Link>
                   <Link
                     href="/scale"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-grey-900 hover:bg-gray-50"
                   >
                     Scale
                   </Link>
                   <Link
                     href="/reliability"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-grey-900 hover:bg-gray-50"
                   >
                     Reliability
                   </Link>
@@ -134,7 +134,7 @@ export const Header = () => {
                 <div className="py-6">
                   <Link
                     href="/"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-grey-900 hover:bg-gray-50"
                   >
                     Log in
                   </Link>
