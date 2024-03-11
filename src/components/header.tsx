@@ -7,7 +7,7 @@ export const Header = () => {
   const [openNavbar, setOpenNavbar] = useState(false)
   return (
     <>
-      <header className="absolute w-full z-50">
+      <header className="absolute w-full z-50 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"
