@@ -1,6 +1,10 @@
+'use client'
+
 import Link from "next/link";
+import { useState } from "react";
 
 export const Header = () => {
+  const [openNavbar, setOpenNavbar] = useState(false)
   return (
     <>
       <header className="absolute w-full z-50">
@@ -19,6 +23,7 @@ export const Header = () => {
             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+              onClick={()=>setOpenNavbar(true)}
             >
               <span className="sr-only">Open main menu</span>
               <svg
@@ -64,16 +69,10 @@ export const Header = () => {
             </Link>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-white"
-            >
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
           </div>
         </nav>
 
-        <div className="lg:hidden" role="dialog" aria-modal="true">
+        <div className={`lg:hidden ${openNavbar ? 'block' : 'hidden'}`} role="dialog" aria-modal="true">
           <div className="fixed inset-0 z-50"></div>
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
@@ -85,6 +84,7 @@ export const Header = () => {
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-grey-900"
+                onClick={()=>{setOpenNavbar(false)}}
               >
                 <span className="sr-only">Close menu</span>
                 <svg
@@ -109,34 +109,30 @@ export const Header = () => {
                   <Link
                     href="/"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-grey-900 hover:bg-gray-50"
+                    onClick={()=>setOpenNavbar(false)}
                   >
                     Home
                   </Link>
                   <Link
                     href="/performance"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-grey-900 hover:bg-gray-50"
+                    onClick={()=>setOpenNavbar(false)}
                   >
                     Performance
                   </Link>
                   <Link
                     href="/scale"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-grey-900 hover:bg-gray-50"
+                    onClick={()=>setOpenNavbar(false)}
                   >
                     Scale
                   </Link>
                   <Link
                     href="/reliability"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-grey-900 hover:bg-gray-50"
+                    onClick={()=>setOpenNavbar(false)}
                   >
                     Reliability
-                  </Link>
-                </div>
-                <div className="py-6">
-                  <Link
-                    href="/"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-grey-900 hover:bg-gray-50"
-                  >
-                    Log in
                   </Link>
                 </div>
               </div>

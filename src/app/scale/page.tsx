@@ -1,3 +1,6 @@
+import { Hero } from "@/components/hero";
+import scaleImg from '../../../public/scale.jpg'
+
 export default function Scale() {
-  return <h1> Scale page!</h1>;
+  return <Hero imageData={scaleImg} altText='car factory' heading='Professional Scale Page'/>;
 }

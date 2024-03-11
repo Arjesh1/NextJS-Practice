@@ -1,3 +1,6 @@
+import { Hero } from "@/components/hero";
+import performanceImg from "../../../public/performance.jpg";
+
 export default function Performance() {
-  return <h1> Performance page!</h1>;
+  return <Hero imageData={performanceImg} altText='car factory' heading='Professional Performance Page'/>;
 }

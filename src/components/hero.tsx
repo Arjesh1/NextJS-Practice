@@ -18,7 +18,7 @@ export const Hero = ({imageData, altText, heading='hello'}: HeroProps) => {
       }} />
     </div>
     <div className="flex justify-center items-center h-screen">
-    <h2 className=" bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg p-28 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+    <h2 className="text-center bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg p-28 w-screen text-4xl font-bold tracking-tight text-white sm:text-5xl">
         {heading}
     </h2>
   </div>
